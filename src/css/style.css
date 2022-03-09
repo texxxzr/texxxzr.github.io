@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/*---ПЕРВЫЙ БЛОК---*/
+/*---ПЕРВЫЙ_БЛОК---*/
 nav {
     width: 100%;
     height: 60px;
@@ -67,7 +67,7 @@ nav {
     margin: 58px 14px 0px 14px;
 }
 
-/*---ВТОРОЙ БЛОК---*/
+/*---ВТОРОЙ_БЛОК---*/
 .about_me {
     background: url(../img/boy_black.png) center no-repeat , #edeef3;
     width: 100%;
@@ -86,11 +86,9 @@ nav {
     font-weight: bold;
 }
 
-.title__container2 p {
-    
+.title__container2 p { 
     text-align: center;
     margin-top: 318px;
-    /*padding-top: 318px;*/
 }
 
 .title__container2 input {
@@ -103,6 +101,12 @@ nav {
     font-size: 13px;
     padding: 0px 13px;
     margin-top: 36px;
-    
+    margin-bottom: 34px;
 }
 
+/*---ТРЕТИЙ_БЛОК---*/
+
+.what_i_can {
+    background: url(../img/bg2.png) no-repeat center;
+    height: 524px;
+}

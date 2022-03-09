@@ -87,6 +87,8 @@ nav {
 }
 
 .title__container2 p {
+    
+    text-align: center;
     margin-top: 318px;
     /*padding-top: 318px;*/
 }
@@ -103,3 +105,4 @@ nav {
     margin-top: 36px;
     
 }
+

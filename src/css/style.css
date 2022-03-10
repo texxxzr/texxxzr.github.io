@@ -84,11 +84,13 @@ nav {
     text-transform: uppercase;
     font-size: 30px;
     font-weight: bold;
+    color: #263244;
 }
 
 .title__container2 p { 
     text-align: center;
     margin-top: 318px;
+    color: #263244
 }
 
 .title__container2 input {
@@ -109,4 +111,35 @@ nav {
 .what_i_can {
     background: url(../img/bg2.png) no-repeat center;
     height: 524px;
+}
+
+.title__container3 {
+    text-align: center;
+    
+}
+
+.title__container3 h2 {
+    padding-top: 110px;
+    padding-bottom: 94px;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+    color: #263244;
+}
+
+.cards_title__container3 {
+    width: 100px;
+    display: inline-block;
+    padding: 0px 30px 0px 30px;
+    
+}
+
+.cases {
+    
+    
+}
+
+.title__container4 {
+    
+    
 }

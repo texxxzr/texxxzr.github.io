@@ -2,7 +2,8 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/*---ПЕРВЫЙ_БЛОК---*/
+/*------------------------------------МЕНЮ_ШАПКА-------------------------------------*/
+
 nav {
     width: 100%;
     height: 60px;
@@ -30,6 +31,8 @@ nav {
     font-size: 16px;
     text-transform: uppercase;
 }
+
+/*------------------------------------ПЕРВЫЙ_БЛОК-------------------------------------*/
 
 .main {
     width: 100%;
@@ -67,9 +70,9 @@ nav {
     margin: 58px 14px 0px 14px;
 }
 
-/*---ВТОРОЙ_БЛОК---*/
+/*-------------------------------------ВТОРОЙ_БЛОК--------------------------------*/
 .about_me {
-    background: url(../img/boy_black.png) center no-repeat , #edeef3;
+    background-color: #edeef3;
     width: 100%;
     height: 718px;
 }
@@ -87,9 +90,8 @@ nav {
     color: #263244;
 }
 
-.title__container2 p { 
+.title__container2 { 
     text-align: center;
-    margin-top: 318px;
     color: #263244
 }
 
@@ -111,35 +113,3 @@ nav {
 .what_i_can {
     background: url(../img/bg2.png) no-repeat center;
     height: 524px;
-}
-
-.title__container3 {
-    text-align: center;
-    
-}
-
-.title__container3 h2 {
-    padding-top: 110px;
-    padding-bottom: 94px;
-    text-transform: uppercase;
-    font-size: 30px;
-    font-weight: bold;
-    color: #263244;
-}
-
-.cards_title__container3 {
-    width: 100px;
-    display: inline-block;
-    padding: 0px 30px 0px 30px;
-    
-}
-
-.cases {
-    
-    
-}
-
-.title__container4 {
-    
-    
-}

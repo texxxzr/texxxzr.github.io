@@ -152,24 +152,28 @@ nav {
 .cases_bottom {
     height: 964px;
     width: 100%;
-    background-position: center;
+    padding-left: 280px;
 }
 .cases_bottom p{
     padding-top: 2px;
 }
 .cases_bottom h4 {
-    padding-top: 4px;
+    padding-top: 8px;
     font-weight: bold;
+    color: #1c2534;
 }
 .cases_bottom h5 {
-    padding-top: 4px;
-    font-weight: bold;    
+    padding-top: 8px;
+    font-weight: bold;
+    color: #1c2534;
+}
+.card_image {
+    padding-left: 400px;
 }
 .cases_textbox1 {
     display: inline-block;
     width: 288px;
     height: 60px;
-    margin-left: 388px;
     vertical-align: middle;
 }
 .cases_textbox2 {
@@ -186,7 +190,6 @@ nav {
 /*----------------------------------------ПЯТЫЙ_БЛОК-------------------------------------*/
 .price {
     height: 788px;
-    width: 100%;   
 }
 .title__container5 h2 {
     padding-top: 220px;
@@ -195,13 +198,15 @@ nav {
     font-size: 30px;
     text-align: center;
     text-transform: uppercase;
+    color: #1c2534;
 }
 .title__container5 h4 {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
     text-align:left;
     text-transform: uppercase;
     padding: 8px 0px;
+    color: #1c2534;
     
 }
 .price_menu {
@@ -213,10 +218,14 @@ nav {
 select {
     padding: 2px 0px;
     background-color: lightgray;
+    width: 890px;
+    height: 58px;
+    
 }
 .price_table {
-    border: 0px solid black;
-    width: 100%;
+    border: 1px solid black;
+    width: 890px;
+    height: 58px;
 }
 /*----------------------------------------ШЕСТОЙ_БЛОК-------------------------------------*/
 .statistic {
@@ -231,6 +240,7 @@ select {
     font-size: 30px;
     text-align: center;
     text-transform: uppercase;
+    color: #1c2534;
 }
 .card2 {
     text-align: center;
@@ -267,6 +277,7 @@ select {
     font-size: 30px;
     text-align: center;
     text-transform: uppercase;
+    color: #1c2534;
 }
 .title__container7 p {
     padding: 30px 0px;
@@ -308,7 +319,7 @@ select {
     margin-left: 40px
 }
 .card_box {
-    padding-left: 526px;
+    padding-left: 538px;
 }
 .card_text3 {
     padding-top: 6px;
@@ -317,11 +328,12 @@ select {
     margin-left: 700px;
 }
 .message {
-    margin-left: 660px;
+    margin-left: 588px;
     margin-top: 20px;
 }
 .button input {
     border: 2px solid #6d7682;
+    border-radius: 6px;
     height: 30px;
     margin-left: 830px;
     margin-top: 20px;

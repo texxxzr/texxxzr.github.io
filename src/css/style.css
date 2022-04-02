@@ -325,10 +325,16 @@ select {
     padding-top: 6px;
 }
 .name_mail {
-    margin-left: 700px;
+    margin-left: 458px;
+    
+}
+.name_mail input {
+    height: 36px;
+    width: 354px;
+    margin-left: 29px;
 }
 .message {
-    margin-left: 588px;
+    margin-left: 486px;
     margin-top: 20px;
 }
 .button input {

@@ -167,9 +167,6 @@ nav {
     font-weight: bold;
     color: #1c2534;
 }
-.card_image {
-    padding-left: 400px;
-}
 .cases_textbox1 {
     display: inline-block;
     width: 288px;
@@ -281,6 +278,12 @@ select {
 }
 .title__container7 p {
     padding: 30px 0px;
+}
+.price_table_number {
+    text-align: right;
+}
+price_table_text {
+    text-align: left;
 }
 /*------------------------------------------ВОСЬМОЙ_БЛОК----------------------------------*/
 .contacts {

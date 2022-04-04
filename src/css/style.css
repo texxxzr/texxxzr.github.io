@@ -62,10 +62,10 @@ nav {
         color: #FAE400;
     }
     40% {
-        color: #4FEB12;
+        color: #4EFF01;
     }
     60%{
-        color: #35D3D6;
+        color: #00FFFF;
     }
     80%{
         color: #F900BE;
@@ -98,6 +98,27 @@ nav {
 }
 .menu li:nth-child(6){
     animation-delay: 2s;
+}
+/*----------------------------------------"Loader"-----------------------------------*/
+.spinner {
+    height: 50px;
+    width: 50px;
+    border-left: 3px solid greenyellow;
+    border-bottom: 3px solid greenyellow;
+    border-right: 3px solid greenyellow;
+    border-top: 3px solid transparent;
+    border-radius: 50%;
+    animation: spinner 1s linear infinite;
+}
+ 
+@keyframes spinner {
+    from {
+        transform: rotate(0deg);
+    }
+ 
+    to {
+        transform: rotate(360deg);
+    }
 }
 /*------------------------------------1_Блок"Привет"-------------------------------------*/
 .main {
@@ -208,6 +229,14 @@ nav {
 }
 .title__container2 input:active{
     transform: scale(1.2)
+}
+.title__container2 img {
+    opacity: 0.3;
+}
+.title__container2 img:hover{
+    opacity: 1;
+    transform: rotate(1080deg) scale(6.6);
+    transition: all 2s 0.1s ;
 }
 /*--------------------------------------3_Блок"Что_я_умею"---------------------------------*/
 .what_i_can {
@@ -397,6 +426,15 @@ select {
     font-weight: bold;
     color: #323e4f;
 }
+.statistic:hover{
+    transform: scale(0.8);
+    transition: all 10s 0.01s ease;
+
+}
+.title__container6:hover{
+    transform: scale(1.4);
+    transition: all 10s 0.01s ease;
+}
 /*-------------------------------------7_Блок"Отзывы"-----------------------------------*/
 .reviews {
     background-position: center;
@@ -414,6 +452,11 @@ select {
 }
 .title__container7 p {
     padding: 30px 0px;
+}
+.title__container7 img:hover{
+    opacity: 1;
+    transform: rotate(1080deg) scale(6.6);
+    transition: all 2s 0.1s ;
 }
 /*-------------------------------------8_Блок"контакты"----------------------------------*/
 .contacts {

@@ -6,17 +6,25 @@ nav {
     width: 100%;
     height: 60px;
     background: #344051;
+    position: fixed;
 }
-.logo {
+.logo p {
     color: #fff;
     font-size: 28px;
     line-height: 60px;
     padding-left: 388px;
     float: left;
+    font-weight: 800;
+    -webkit-animation: comming 2s ease;
+    -o-animation: comming 2s ease;
+    animation: comming 2s ease;
+    animation-iteration-count:infinite;
+    -moz-animation-iteration-count:infinite;
+    -webkit-animation-iteration-count:infinite;
 }
 .menu {
     float: left;
-    padding-left: 432px;
+    margin-left: 432px;
 }
 .menu li {
     float: left;
@@ -25,11 +33,77 @@ nav {
     margin-right: 40px;
     font-size: 16px;
     text-transform: uppercase;
+    -webkit-animation: topshift 0.4s ease forwards;
+    -o-animation: topshift 0.4s ease forwards;
+    animation: topshift 0.4s ease forwards;
+    opacity: 0;
+}
+.menu li a {
+    transition: all 0.2s;
+    color: white;
+    transform: scale(1);
+    display: inline-block;
+}
+.menu li a:visited{
+    color: white;
+}
+.menu li a:hover{
+    color: orange;
+}
+.menu li a:active {
+    transform: scale(1.2);
+}
+@keyframes comming {
+    0% {
+        /*opacity: 0;*/
+        color: #D66400;    
+    }
+    20% {
+        color: #FAE400;
+    }
+    40% {
+        color: #4FEB12;
+    }
+    60%{
+        color: #35D3D6;
+    }
+    80%{
+        color: #F900BE;
+    }
+    100%{
+        color: #FA4E00;
+    }
+}
+@keyframes topshift {
+    from{
+        opacity: 0;
+        margin-top: -80px;
+    }
+    to {
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+.menu li:nth-child(2){
+    animation-delay: 0.4s;
+}
+.menu li:nth-child(3){
+    animation-delay: 0.8s;
+}
+.menu li:nth-child(4){
+    animation-delay: 1.2s;
+}
+.menu li:nth-child(5){
+    animation-delay: 1.6s;
+}
+.menu li:nth-child(6){
+    animation-delay: 2s;
 }
 /*------------------------------------1_Блок"Привет"-------------------------------------*/
 .main {
     width: 100%;
-    height: calc(100% - 60px);
+    height: 100%;
+    /*height: calc(100% - 60px);*/
     background: url(../img/boy.png) 90% 100%/auto 85%  no-repeat  , url(../img/bg.png) center/cover no-repeat;    
 }
 .title__container {
@@ -37,6 +111,13 @@ nav {
     margin: 432px 0px 0px 404px;
     color: #2c384a;
     text-align: center;
+    opacity: 0;
+    -webkit-animation: titlemove 2s ease forwards ;
+    -o-animation: titlemove 2s ease forwards ;
+    animation: titlemove 2s ease forwards ;
+    -webkit-animation-delay:2.2s;
+    -o-animation-delay:2.2s;
+    animation-delay:2.2s;  
 } 
 .title__container h1 {
     font-size: 60px;
@@ -50,13 +131,33 @@ nav {
 .title__container input {
     height: 40px;
     text-align: center;
-    border: 2px solid #6d7682;
+    border: 2px solid #344051;
     background: none;
     border-radius: 5px;
-    color: #6d7682;
+    color: #344051;
     font-size: 13px;
     padding: 0px 16px;
     margin: 58px 14px 0px 14px;
+}
+@keyframes titlemove {
+    from{
+        opacity: 0;
+        margin-left: -500px;
+    }
+    to {
+        margin-left: 404px;
+        opacity: 1;
+    }
+}
+.title__container input {
+    transition: all 0.2s;
+}
+.title__container input:hover{
+    background: #344051;
+    color: white;
+}
+.title__container input:active{
+    transform: scale(1.2)
 }
 /*-------------------------------------2_Блок"Обо_Мне"--------------------------------*/
 .about_me {
@@ -85,10 +186,10 @@ nav {
 .title__container2 input {
     height: 34px;
     text-align: center;
-    border: 2px solid #6d7682;
+    border: 2px solid #344051;
     background: none;
     border-radius: 5px;
-    color: #6d7682;
+    color: #344051;
     font-size: 13px;
     padding: 0px 13px;
     margin-top: 36px;
@@ -97,6 +198,16 @@ nav {
 .text_block1 {
     text-align: left;
     padding: 0px 300px;
+}
+.title__container2 input {
+    transition: all 0.2s;
+}
+.title__container2 input:hover{
+    background: #344051;
+    color: white;
+}
+.title__container2 input:active{
+    transform: scale(1.2)
 }
 /*--------------------------------------3_Блок"Что_я_умею"---------------------------------*/
 .what_i_can {
@@ -180,9 +291,27 @@ nav {
     padding-bottom: 80px;
 }
 .cases_input {
-    border: 10px solid #63b5ae;
-    border-radius: 9px;
-    margin-top: 6px;
+    height: 44px;
+    width: 202px;
+    text-align: center;
+    border: 2px solid #63b5ae;
+    background: #63b5ae;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    padding: 0px 42px;
+    margin: 24px 0px 0px 0px;
+}
+
+.cases_textbox1 input {
+    transition: all 0.2s;
+}
+.cases_textbox1 input:hover{
+    background: #63b5ae;
+    color: white;
+}
+.cases_textbox1 input:active{
+    transform: scale(1.2)
 }
 /*----------------------------------------5_Блок"Прайс"-----------------------------------*/
 .price {
@@ -215,7 +344,7 @@ select {
     padding: 2px 0px;
     background-color: lightgray;
     width: 890px;
-    height: 58px;
+    height: 30px;
     
 }
 .price_table {
@@ -236,7 +365,7 @@ select {
     background-image: url(../img/statistic_background.png);
     background-position: center;
     width: 100%;
-    height: 500px; 
+    height: 500px;
 }
 .title__container6 h2 {
     padding-top: 102px;
@@ -342,11 +471,24 @@ select {
     margin-top: 20px;
 }
 .button input {
-    border: 2px solid #6d7682;
+    border: 2px solid white;
     border-radius: 6px;
     height: 30px;
-    margin-left: 830px;
+    margin-left: 810px;
     margin-top: 20px;
+    background: none;
+    color: white;
+    text-align: center;
+    padding: 0px 16px;
+}
+.button input:active {
+    transition: all 0.2s;
+    transform: scale(1.2);
+}
+.button input:hover {
+    background: orange;
+    color: #344051;
+    border: 2px solid #344051;
 }
 /*------------------------------------------ПОДВАЛ----------------------------------------*/
 footer {
